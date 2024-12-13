@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China</title>
+    <link rel="stylesheet" href="css/nav_com.css">
+    <link rel="stylesheet" href="css/menu_style.css">
+    <script src="js/search_class.js"></script>
+</head>
+
+<body class="w">
+    <div class="wrapper">
+        <nav>
+            <h2>味道的地理</h2>
+            <ul class="links">
+                <li><a href="web.html">首页</a></li>
+                <li><a href="image.html">图集</a></li>
+                <li><a href="sreach.html">搜索</a></li>
+                <li><a>亚洲</a>
+                    <ul class="dropdown">
+                        <li><a href="China.html">中国</a></li>
+                        <li><a href="Japen.html">日本</a></li>
+                    </ul>
+                </li>
+                <li><a>欧洲</a>
+                    <ul class="dropdown">
+                        <li><a href="French.html">法国</a></li>
+                        <li><a href="Italia.html">意大利</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<hr color="gainsboro" noshade="noshade">
+<div class="filter-container">
+    <input type="text" id="searchInput" placeholder="搜索感兴趣的内容" onkeyup="filterSearch()">
+    <button class="filter-button active" data-filter="all" onclick="filterSelection(this)">全部</button>
+    <button class="filter-button" data-filter="川菜" onclick="filterSelection(this)">川菜</button>
+    <button class="filter-button" data-filter="淮扬菜" onclick="filterSelection(this)">淮扬菜</button>
+    <button class="filter-button" data-filter="徽菜" onclick="filterSelection(this)">徽菜</button>
+    <button class="filter-button" data-filter="鲁菜" onclick="filterSelection(this)">鲁菜</button>
+    <button class="filter-button" data-filter="闽菜" onclick="filterSelection(this)">闽菜</button>
+    <button class="filter-button" data-filter="湘菜" onclick="filterSelection(this)">湘菜</button>
+    <button class="filter-button" data-filter="粤菜" onclick="filterSelection(this)">粤菜</button>
+    <button class="filter-button" data-filter="浙菜" onclick="filterSelection(this)">浙菜</button>
+</div>
+
+    <div class="monster-dictionary">
+        <div class="card-container">
+        <div class="card" data-type="川菜" data-search="水煮鱼 川菜 麻辣">
+            <img src="img/川菜1.jpg" alt="水煮鱼" class="card-image">
+            <h3 class="card-title">水煮鱼</h3>
+            <p class="card-description">这道四川经典名菜以其独特的麻辣红油汤底和鲜嫩的鱼肉而闻名。四川盆地湿润的气候和丰富的动植物资源，为这道菜提供了独特的食材和调味品，使其成为川菜中的经典代表。</p>
+        </div>
+        
+        <div class="card" data-type="川菜" data-search="馋嘴蛙 川菜 麻辣">
+            <img src="img/川菜2.jpg" alt="馋嘴蛙" class="card-image">
+            <h3 class="card-title">馋嘴蛙</h3>
+            <p class="card-description">
+                馋嘴蛙以其鲜辣的蛙肉和丰富的辣椒、花椒而著称，这道菜完美展现了川菜对麻辣口感的深刻理解。四川盆地的湿润气候为蛙类提供了良好的生长环境，使得蛙肉成为川菜中不可或缺的食材之一。</p>
+        </div>
+        
+        <div class="card" data-type="淮扬菜" data-search="红烧狮子头 淮扬菜 平和">
+            <img src="img/淮扬菜1.jpg" alt="红烧狮子头" class="card-image">
+            <h3 class="card-title">红烧狮子头</h3>
+            <p class="card-description">淮扬菜中的经典代表，制作工艺精细，口味平和，深受各地人们的喜爱。这道菜体现了江苏地区对食材原味的尊重和对烹饪技艺的追求，是淮扬菜系中不可或缺的传统美食。</p>
+        </div>
+        
+        <div class="card" data-type="淮扬菜" data-search="松鼠桂鱼 淮扬菜 酸甜">
+            <img src="img/淮扬菜2.jpg" alt="松鼠桂鱼" class="card-image">
+            <h3 class="card-title">松鼠桂鱼</h3>
+            <p class="card-description">以桂鱼为主要食材，炸好的鱼淋上糖醋酱汁，色泽红亮，口感外酥里嫩，酸甜可口。这道菜展现了江苏地区对酸甜平衡的精湛技艺，以及对食材的精致处理，是淮扬菜中的经典之作。
+            </p>
+        </div>
+        
+        <div class="card" data-type="徽菜" data-search="小炒腊味 徽菜 腊味">
+            <img src="img/徽菜1.jpg" alt="小炒腊味" class="card-image">
+            <h3 class="card-title">小炒腊味</h3>
+            <p class="card-description">
+                主要食材有腊味（腊肠或腊肉），搭配有青椒、红椒和洋葱等蔬菜，腊味的独特香味和蔬菜的清甜相互融合。这道菜体现了安徽地区对腊味的独特处理和对食材原味的尊重，是徽菜中的传统佳肴。</p>
+        </div>
+        
+        <div class="card" data-type="徽菜" data-search="卤水拼盘 徽菜 卤香">
+            <img src="img/徽菜2.jpg" alt="卤水拼盘" class="card-image">
+            <h3 class="card-title">卤水拼盘</h3>
+            <p class="card-description">
+                由多种卤制食材组成，常见的有卤鸭、卤鹅、卤蛋、卤豆腐等，以其浓郁的卤香和多样的食材深受人们喜爱。这道菜展现了安徽地区对卤味的独到理解和对食材多样性的运用，是徽菜中的经典凉菜。</p>
+        </div>
+        
+        <div class="card" data-type="鲁菜" data-search="鱼香肉丝 鲁菜 酸甜辣">
+            <img src="img/鲁菜1.jpg" alt="鱼香肉丝" class="card-image">
+            <h3 class="card-title">鱼香肉丝</h3>
+            <p class="card-description">以其独特的鱼香味而闻名，味道酸甜带辣，非常下饭。这道菜体现了山东地区对复合味型的巧妙搭配和对食材的精细处理，是鲁菜中的经典代表。</p>
+        </div>
+        
+        <div class="card" data-type="鲁菜" data-search="糖醋排骨 鲁菜 酸甜">
+            <img src="img/鲁菜2.jpg" alt="糖醋排骨" class="card-image">
+            <h3 class="card-title">糖醋排骨</h3>
+            <p class="card-description">以排骨为主料，经过油炸后，再裹上糖醋汁，色泽红亮，味道酸甜适中，排骨外酥里嫩。这道菜展现了山东地区对酸甜口味的精准把握和对烹饪技艺的传承，是鲁菜中的传统美食。
+            </p>
+        </div>
+        <div class="card" data-type="闽菜" data-search="佛跳墙 闽菜 满坛香">
+            <img src="img/闽菜1.jpg" alt="佛跳墙" class="card-image">
+            <h3 class="card-title">佛跳墙</h3>
+            <p class="card-description">
+                佛跳墙，又名福寿全，是福建省福州市的特色名菜，属于闽菜系。这道菜以其丰富的食材和复杂的烹饪工艺而闻名，包括鲍鱼、海参、鱼翅等珍贵食材，味道鲜美，营养价值极高。佛跳墙的制作通常选用多种高档食材，汇聚在一起，加入高汤和福建老酒，文火煨制而成，呈现出软嫩柔润，浓郁荤香，又荤而不腻，味中有味的特点。
+            </p>
+        </div>
+        
+        <div class="card" data-type="闽菜" data-search="蟹粉狮子头 闽菜 蟹粉">
+            <img src="img/闽菜2.jpg" alt="蟹粉狮子头" class="card-image">
+            <h3 class="card-title">蟹粉狮子头</h3>
+            <p class="card-description">
+                蟹粉狮子头是闽菜中的一道经典菜肴，将猪肉剁成肉末，加入调料后搅拌上劲，制成大肉丸，通常还会加入蟹粉或蟹肉来增加风味。这道菜的口感松软，肥而不腻，细品之下，蟹粉鲜香，入口即化，汤汁也非常的美味。</p>
+        </div>
+        
+        <div class="card" data-type="湘菜" data-search="剁椒鱼头 湘菜 辣">
+            <img src="img/湘菜1.jpg" alt="剁椒鱼头" class="card-image">
+            <h3 class="card-title">剁椒鱼头</h3>
+            <p class="card-description">
+                剁椒鱼头是中国湖南省的传统名菜，属于湘菜系。这道菜以大鱼的鱼头为主料，搭配大量的剁椒和蒜末，以及姜、葱、酱油等调料蒸制而成，色泽红亮，味道鲜美，辣而不燥。湘菜以其鲜辣和香辣著称，剁椒鱼头完美体现了湘菜对辣味的追求和对食材的尊重。
+            </p>
+        </div>
+        
+        <div class="card" data-type="湘菜" data-search="辣子鸡 湘菜 麻辣鲜香">
+            <img src="img/湘菜2.jpg" alt="辣子鸡" class="card-image">
+            <h3 class="card-title">辣子鸡</h3>
+            <p class="card-description">
+                辣子鸡是湘菜中的经典菜肴，以鸡肉切成小块，用油炸至外皮酥脆，然后与大量的干辣椒、花椒、蒜片、姜片等调料一起快速翻炒，直到鸡肉完全吸收了调料的味道。这道菜的特点是辣味十足，鸡肉干香，是喜欢辣味的食客的最爱。</p>
+        </div>
+        
+        <div class="card" data-type="粤菜" data-search="红烧乳鸽 粤菜 皮脆肉嫩">
+            <img src="img/粤菜1.jpg" alt="红烧乳鸽" class="card-image">
+            <h3 class="card-title">红烧乳鸽</h3>
+            <p class="card-description">红烧乳鸽是粤菜中的一道传统名菜，以其皮脆肉嫩、色泽红亮而著称。这道菜选用幼小的鸽子，经过腌制、上色、油炸等步骤制作而成，体现了粤菜对食材口感和色泽的精致追求。
+            </p>
+        </div>
+        
+        <div class="card" data-type="粤菜" data-search="广东早茶 粤菜 社交活动">
+            <img src="img/粤菜2.jpg" alt="广东早茶" class="card-image">
+            <h3 class="card-title">广东早茶</h3>
+            <p class="card-description">
+                广东早茶是一种社交活动，人们在早上或下午聚集在茶楼，享受各种点心和茶水，是粤菜中不可或缺的一部分。这种文化已经在中国南方地区流传了很长时间，并且是广东地区非常受欢迎的饮食习惯。</p>
+        </div>
+        
+        <div class="card" data-type="浙菜" data-search="清蒸鱼 浙菜 传统烹饪">
+            <img src="img/浙菜1.jpg" alt="清蒸鱼" class="card-image">
+            <h3 class="card-title">清蒸鱼</h3>
+            <p class="card-description">
+                清蒸鱼是中国菜中非常传统的一种烹饪方式，尤其流行于中国南方沿海地区。这道菜通常选用新鲜的鱼，如鲈鱼、石斑鱼或其他适合清蒸的鱼类。鱼在蒸制前会进行腌制，以增加风味，然后放入蒸锅中蒸熟。蒸好后，鱼上会淋上热油和特制的酱油，撒上葱花或姜丝，有时还会加入一些芝麻以增加香气，体现了浙菜对食材原味的尊重和对健康的重视。
+            </p>
+        </div>
+        
+        <div class="card" data-type="浙菜" data-search="东坡肉 浙菜 酥烂">
+            <img src="img/浙菜2.jpg" alt="东坡肉" class="card-image">
+            <h3 class="card-title">东坡肉</h3>
+            <p class="card-description">
+                东坡肉是浙菜中的经典名菜，以其五花肉经过长时间的炖煮，肉质酥烂，入口即化，色泽红亮，味道鲜美而闻名。这道菜的特点是油润柔糯，味美异常，融合了浙菜的精湛烹饪技艺和独特调味方法，体现了浙菜对于食材的精细处理和口味的独特追求。
+            </p>
+        </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
